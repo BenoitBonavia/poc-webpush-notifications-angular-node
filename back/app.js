@@ -1,45 +1,6 @@
-/*
-
-const webpush = require('web-push');
-
-console.log(webpush.generateVAPIDKeys());
-
-const subscription = {
-    "endpoint": "https://fcm.googleapis.com/fcm/send/cgDcfYJuvVE:APA91bG_x3deM9gwdO_Sxmkc8AvdieKubzEjHezZPdL7pThJ9f4oxgANazpGRIK_9v8Mvg82Hv8kRRDnNSXKE3KzC9S7wvcG8oSefyLKD_0OXADap1SWZmifYWpkokwqcjPmA4LEIz2e",
-    "expirationTime": null,
-    "keys": {
-        "p256dh": "BObsf0-K3-YeIslYAsdQ_6uA7f0QFNRoYlDYFBJar5O7mKxbDtGXo11O8TRW07R39mjvSlmHMlklbyeRJG3TTSc",
-        "auth": "IvlA4VlAjt7dsaykuUPPzA"
-    }
-}
-
-const payload = {
-    notification: {
-        data: {url: 'http://www.google.fr'},
-        title: 'Fun notitifcation',
-        vibrate: [100, 50, 100]
-    }
-}
-
-webpush.setVapidDetails('mailto:benoit.bonavia@gmail.com', publicKey, privateKey);
-
-webpush.sendNotification(subscription, JSON.stringify(payload))
-
-setTimeout(() => webpush.sendNotification(subscription, JSON.stringify(payload)), 5000);
-setTimeout(() => webpush.sendNotification(subscription, JSON.stringify(payload)), 10000);
-setTimeout(() => webpush.sendNotification(subscription, JSON.stringify(payload)), 15000);
-setTimeout(() => webpush.sendNotification(subscription, JSON.stringify(payload)), 20000);
-setTimeout(() => webpush.sendNotification(subscription, JSON.stringify(payload)), 20000);
-setTimeout(() => webpush.sendNotification(subscription, JSON.stringify(payload)), 30000);
-setTimeout(() => webpush.sendNotification(subscription, JSON.stringify(payload)), 40000);
-setTimeout(() => webpush.sendNotification(subscription, JSON.stringify(payload)), 50000);
-
-*/
-
 const express = require('express');
 const webpush = require('web-push');
 const bodyparser = require('body-parser');
-const path = require('path');
 
 
 const app = express();
